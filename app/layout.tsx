@@ -1,1 +1,22 @@
-import type {Metadata,Viewport} from "next";import "./globals.css";export const metadata:Metadata={title:"2050 AI Cyber City",description:"Enter the living city of tomorrow."};export const viewport:Viewport={width:"device-width",initialScale:1,themeColor:"#050611"};export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="zh-CN"><body>{children}</body></html>}
+import type { Metadata, Viewport } from "next";
+import "./globals.css";
+export const metadata: Metadata = {
+  title: "2050 AI Cyber City",
+  description: "Enter the living city of tomorrow.",
+};
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#080e14",
+};
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="zh-CN">
+      <body>{children}</body>
+    </html>
+  );
+}
